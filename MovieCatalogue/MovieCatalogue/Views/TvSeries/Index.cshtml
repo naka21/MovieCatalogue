@@ -1,27 +1,27 @@
 ﻿@model IEnumerable<MovieCatalogue.Models.TvSeries>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Сериали";
 }
 
-<h2>Index</h2>
+<h2>Сериали</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Добави сериал", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Title)
+            <strong>Заглавие</strong>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Genre)
+            <strong>Жанр</strong>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Season)
+            <strong>Дата на издаване</strong>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Episode)
+            <strong>Дата на гледане</strong>
         </th>
         <th></th>
     </tr>
@@ -41,9 +41,9 @@
             @Html.DisplayFor(modelItem => item.Episode)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            @Html.ActionLink("Редактирай", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Детайли", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Изтрий", "Delete", new { id=item.ID })
         </td>
     </tr>
 }

@@ -1,10 +1,10 @@
 ﻿@model MovieCatalogue.Models.TvSeries
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Създай нов";
 }
 
-<h2>Create</h2>
+<h2>Създай нов запис</h2>
 
 
 @using (Html.BeginForm()) 
@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>TvSeries</h4>
+        <h4>Сериали</h4>
         <hr />
         @Html.ValidationSummary(true)
 
@@ -50,14 +50,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Създай" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Назад", "Index")
 </div>
 
 @section Scripts {
